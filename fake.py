@@ -9,11 +9,6 @@ st.header('Fake News Detection')
 
 df = pd.read_csv('fake_or_real_news.csv.zip')
 
-df['label'] = df['label'].replace(['FAKE'],'0')
-df['label'] = df['label'].replace(['REAL'],'1')
-
-df['label'] = pd.to_numeric(df['label'])
-
 X = df['title']
 y = df['label']
 
@@ -40,4 +35,4 @@ if prediction == [0]:
 else:
   prediction2 = prediction.tostring()
 
-st.info(prediction2)
+st.info(prediction)
