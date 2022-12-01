@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 
 st.header('Fake News Detection')
 
-df = pd.read_csv('fake_or_real_news.csv')
+df = pd.read_csv('fake_or_real_news.csv.zip')
 
 df['label'] = df['label'].replace(['FAKE'],'0')
 df['label'] = df['label'].replace(['REAL'],'1')
