@@ -37,7 +37,9 @@ prediction = classifier.predict(vectorized_input_data)
 
 if prediction == '[0]':
   prediction2 = prediction.replace('[0]', 'FAKE NEWS')
+  prediction3 = prediction2.astype(string)
 elif prediction == '[1]':
   prediction2 = prediction.replace('[1]', 'REAL NEWS')
+  prediction3 = prediction2.astype(string)
 
-st.info(prediction2)
+st.info(prediction3)
