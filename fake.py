@@ -32,4 +32,4 @@ prediction = classifier.predict(vectorized_input_data)
 
 prediction2 = str(prediction).replace(' [', '').replace('[', '').replace(']', '')
 prediction3 = prediction2. strip(''')
-st.info(prediction2)
+st.info(prediction3)
