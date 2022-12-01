@@ -35,11 +35,11 @@ vectorized_input_data = tfvect.transform(input_data)
 prediction = classifier.predict(vectorized_input_data)
 
 
-if prediction == '[0]':
-  prediction2 = prediction.replace('[0]', 'FAKE NEWS')
+if prediction == [0]:
+  prediction2 = prediction.tostring()
   prediction3 = prediction2.astype(string)
 else:
-  prediction2 = prediction.replace('[1]', 'REAL NEWS')
+  prediction2 = prediction.tostring()
   prediction3 = prediction2.astype(string)
 
 st.info(prediction3)
