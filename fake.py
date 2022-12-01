@@ -31,5 +31,5 @@ prediction = classifier.predict(vectorized_input_data)
   
 
 prediction2 = str(prediction).replace(' [', '').replace('[', '').replace(']', '')
-prediction3 = prediction2. strip('"')
+prediction3 = prediction2.format()
 st.info(prediction3)
