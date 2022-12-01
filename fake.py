@@ -35,4 +35,5 @@ prediction = classifier.predict(vectorized_input_data)
 
 prediction2 = str(prediction).replace(' [', '').replace('[', '').replace(']', '')
 prediction3 = prediction2.replace("'", "")
+st.write('News Prediction Result : ')
 st.info(prediction3)
