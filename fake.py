@@ -9,6 +9,9 @@ st.header('Fake News Detection')
 
 df = pd.read_csv('fake_or_real_news.csv.zip')
 
+df['label'] = df['label'].replace(['FAKE'],'FAKE NEWS')
+df['label'] = df['label'].replace(['REAL'],'REAL NEWS')
+
 X = df['title']
 y = df['label']
 
