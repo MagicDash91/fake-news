@@ -40,4 +40,4 @@ if prediction == '[0]':
 elif prediction == '[1]':
   prediction2 = prediction.replace('[1]', 'REAL NEWS')
 
-st.info(prediction)
+st.info(prediction2)
