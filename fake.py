@@ -28,11 +28,7 @@ input_data = st.text_input('Input your News title here')
 input_data=[input_data]
 vectorized_input_data = tfvect.transform(input_data)
 prediction = classifier.predict(vectorized_input_data)
+  
 
-
-if prediction == [0]:
-  prediction2 = prediction.tostring()
-else:
-  prediction2 = prediction.tostring()
-
-st.info(prediction)
+prediction2 = str(prediction).replace(' [', '').replace('[', '').replace(']', '')
+st.info(prediction2)
